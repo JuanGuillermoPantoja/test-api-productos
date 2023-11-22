@@ -1,0 +1,28 @@
+### create a product
+POST http://localhost:9000/api/products HTTP/1.1
+content-type: application/json
+
+{
+ "name": "teclado rgb",
+ "stock": "25",
+ "price": "75000"
+}
+
+### get products
+GET http://localhost:9000/api/products HTTP/1.1
+
+### get a product
+GET http://localhost:9000/api/products/655d1e722a2c82e318dfa569 HTTP/1.1
+
+### update products
+PUT http://localhost:9000/api/products/655d1e722a2c82e318dfa569 HTTP/1.1
+content-type: application/json
+
+{
+ "name": "mouse rgb",
+ "stock": "55",
+ "price": "50000"
+}
+
+### delete a product
+DELETE http://localhost:9000/api/products/655d1e722a2c82e318dfa569 HTTP/1.1
